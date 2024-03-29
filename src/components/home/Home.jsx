@@ -1,9 +1,15 @@
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
     return (
         <div>
-            <h2>This is Home Component</h2>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
+            <Link to='/'>Home</Link>
+            <Link to='/log-in'>Log In</Link>
         </div>
     );
 };
